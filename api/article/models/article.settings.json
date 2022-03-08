@@ -39,7 +39,7 @@
       "collection": "author",
       "via": "article"
     },
-    "Summary": {
+    "summary": {
       "type": "string"
     }
   }
