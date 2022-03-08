@@ -14,13 +14,7 @@
     "title": {
       "type": "string"
     },
-    "summary": {
-      "type": "string"
-    },
-    "author": {
-      "type": "string"
-    },
-    "authorCover": {
+    "cover": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
@@ -30,6 +24,17 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "author": {
+      "via": "articles",
+      "model": "author"
+    },
+    "categories": {
+      "collection": "category",
+      "via": "articles"
+    },
+    "summary": {
+      "type": "richtext"
     }
   }
 }
