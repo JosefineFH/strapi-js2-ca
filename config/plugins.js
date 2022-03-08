@@ -6,10 +6,5 @@ module.exports = ({ env }) => ({
       api_key: env('CLOUDINARY_API_KEY'),
       api_secret: env('CLOUDINARY_API_SECRET'),
     },
-    breakpoints: {
-      large: 1000,
-      medium: 750,
-      small: 500,
-    },
   },    
 });
