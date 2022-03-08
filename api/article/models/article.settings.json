@@ -32,8 +32,8 @@
       "type": "string"
     },
     "category": {
-      "model": "category",
-      "via": "articles"
+      "via": "articles",
+      "model": "category"
     },
     "authors": {
       "collection": "author",
