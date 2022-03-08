@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "article_authors",
+  "info": {
+    "name": "Article author",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "author": {
+      "type": "string"
+    },
+    "articles": {
+      "collection": "article",
+      "via": "article_author"
+    },
+    "authorCover": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "articleSummary": {
+      "type": "string"
+    }
+  }
+}
