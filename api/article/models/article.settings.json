@@ -25,16 +25,19 @@
       "plugin": "upload",
       "required": false
     },
-    "author": {
-      "via": "articles",
-      "model": "author"
-    },
-    "categories": {
-      "collection": "category",
-      "via": "articles"
-    },
     "summary": {
       "type": "richtext"
+    },
+    "author": {
+      "type": "string"
+    },
+    "category": {
+      "model": "category",
+      "via": "articles"
+    },
+    "authors": {
+      "collection": "author",
+      "via": "article"
     }
   }
 }

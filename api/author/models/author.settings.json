@@ -11,10 +11,6 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "articles": {
-      "collection": "article",
-      "via": "author"
-    },
     "authorCover": {
       "collection": "file",
       "via": "related",
@@ -23,6 +19,13 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "author": {
+      "type": "string"
+    },
+    "article": {
+      "via": "authors",
+      "model": "article"
     }
   }
 }
