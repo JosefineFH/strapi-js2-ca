@@ -25,9 +25,6 @@
       "plugin": "upload",
       "required": false
     },
-    "body": {
-      "type": "richtext"
-    },
     "author": {
       "type": "string"
     },
@@ -41,6 +38,9 @@
     },
     "summary": {
       "type": "string"
+    },
+    "bodyText": {
+      "type": "richtext"
     }
   }
 }
