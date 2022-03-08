@@ -19,6 +19,17 @@
     },
     "author": {
       "type": "string"
+    },
+    "authorCover": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }
